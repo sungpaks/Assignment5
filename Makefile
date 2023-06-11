@@ -13,7 +13,7 @@ $(NAME) : $(OBJS)
 	ar rc $@ $^
 
 %.o : %.c
-	cc $(CFLAG) -c $< -o $@ -I libft.h
+	cc $(CFLAG) -c $< -o $@ -I .
 
 clean :
 	rm -rf $(OBJS)
