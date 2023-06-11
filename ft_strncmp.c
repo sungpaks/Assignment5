@@ -22,7 +22,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	while (*s1 && *s2 && i < n)
 	{ //s1과 s2가 같은 동안, s1과 s2의 문자를 비교
 		if (*s1 != *s2 || i + 1 == n)
-			break ;
+			break ; //문자가 다른 경우, 혹은 n만큼 비교한 경우, 반복문 탈출
 		s1++;
 		s2++;
 		i++;

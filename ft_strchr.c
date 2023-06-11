@@ -12,17 +12,17 @@
 
 char	*ft_strchr(const char *s, int c)
 {
+//문자열 s에서 문자 c가 처음으로 나타나는 위치를 반환하는 함수
 	int	i;
 
 	i = 0;
 	while (s[i])
 	{
-		if (s[i] == (char)c)
+		if (s[i] == (char)c) //문자 c가 나타나면 해당 위치를 반환
 			return ((char *)&s[i]);
 		i++;
 	}
-	if (s[i] == (char)c)
+	if (s[i] == (char)c) //문자열이 끝났어도, c가 혹여 NULL문자인 경우을 위해 한번 더 검사
 		return ((char *)&s[i]);
 	return (0);
 }
-//문자열 s에서 문자 c가 처음으로 나타나는 위치를 반환하는 함수

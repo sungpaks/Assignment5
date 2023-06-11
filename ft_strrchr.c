@@ -17,13 +17,13 @@ char	*ft_strrchr(const char *s, int c)
 
 	result = 0;
 	i = 0;
-	while (s[i])
+	while (s[i]) //문자열 s를 끝까지 탐색
 	{
-		if (s[i] == (char)c)
+		if (s[i] == (char)c) //문자 c가 나타나면 해당 위치를 result에 저장
 			result = (char *)s + i;
 		i++;
 	}
-	if (s[i] == (char)c)
+	if (s[i] == (char)c) //문자열이 끝났어도, c가 혹여 NULL문자인 경우을 위해 한번 더 검사
 		result = (char *)s + i;
 	return (result);
 }
