@@ -14,10 +14,8 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	int	i;
-
-	i = 0;
-	while (s[i])
-		write(fd, &s[i++], 1);
+	if (!s)
+		return ;
+	write(fd, s, ft_strlen(s));
 }
 // 인자로 받은 문자열을 파일 디스크립터로 출력
