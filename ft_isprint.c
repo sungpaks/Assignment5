@@ -17,3 +17,4 @@ int	ft_isprint(int c)
 	else
 		return (0);
 }
+// 출력가능한 아스키코드 범위 내에 해당되는지 확인

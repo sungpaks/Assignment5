@@ -16,3 +16,4 @@ void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
+// 인자로 받은 문자를 파일 디스크립터로 출력

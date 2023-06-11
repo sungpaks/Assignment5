@@ -17,3 +17,4 @@ int	ft_isdigit(int c)
 	else
 		return (0);
 }
+// 인자의 아스키코드가 십진수에 포함되는 경우, 4를 반환

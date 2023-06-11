@@ -17,3 +17,4 @@ int	ft_toupper(int c)
 	else
 		return (c);
 }
+// 인자의 아스키코드가 소문자인 경우, 대문자로 변환

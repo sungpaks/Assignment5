@@ -19,3 +19,8 @@ int	ft_isalpha(int c)
 	else
 		return (0);
 }
+
+/*
+알파벳 대문자인 경우, 1을 반환
+알파벳 소문자인 경우, 2를 반환
+*/

@@ -21,3 +21,4 @@ void	ft_putendl_fd(char *s, int fd)
 		write(fd, &s[i++], 1);
 	write(fd, "\n", 1);
 }
+// 인자로 받은 문자열을 파일 디스크립터로 출력, 개행포함

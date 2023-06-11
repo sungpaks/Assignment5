@@ -20,3 +20,4 @@ void	ft_putstr_fd(char *s, int fd)
 	while (s[i])
 		write(fd, &s[i++], 1);
 }
+// 인자로 받은 문자열을 파일 디스크립터로 출력

@@ -17,3 +17,4 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
+// 아스키코드 범위 내에 해당하는지 확인

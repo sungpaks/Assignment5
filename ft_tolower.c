@@ -17,3 +17,4 @@ int	ft_tolower(int c)
 	else
 		return (c);
 }
+// 인자의 아스키코드가 대문자인 경우, 소문자로 변환

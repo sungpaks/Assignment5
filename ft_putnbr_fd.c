@@ -38,3 +38,4 @@ void	ft_putnbr_fd(int n, int fd)
 		divider /= 10;
 	}
 }
+//입력받은 정수를 문자열로 변환하여 파일 디스크립터로 출력
