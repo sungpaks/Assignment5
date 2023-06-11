@@ -13,7 +13,7 @@
 #include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
-{
+{ //n 바이트를 비교하는 함수
 	size_t			i;
 	unsigned char	*uc1;
 	unsigned char	*uc2;

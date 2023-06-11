@@ -13,7 +13,7 @@
 #include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
-{
+{ //n 바이트를 복사하는 함수
 	size_t	i;
 
 	i = 0;

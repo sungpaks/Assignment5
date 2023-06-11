@@ -13,7 +13,7 @@
 #include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
-{
+{//n 바이트를 0으로 채우는 함수
 	size_t	i;
 
 	i = 0;

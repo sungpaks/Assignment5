@@ -13,7 +13,7 @@
 #include <stdlib.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
-{
+{//n 바이트에서 문자 c가 처음으로 나타나는 위치를 반환하는 함수
 	size_t	i;
 
 	i = 0;
@@ -25,3 +25,4 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
+// ** (void *) type은 (unsigned char *) type으로 변환하여 작업한다. (다른 memXXX.c에서도 동일)

@@ -13,7 +13,7 @@
 #include "libft.h"
 
 void	*ft_calloc(size_t count, size_t size)
-{
+{//count * size 바이트를 할당하고 0으로 초기화하는 함수
 	unsigned char	*result;
 
 	result = (unsigned char *)malloc(count * size);
