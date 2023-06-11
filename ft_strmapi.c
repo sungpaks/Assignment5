@@ -13,7 +13,7 @@
 #include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
-{
+{//문자열의 각 문자에 대해 함수 f를 적용한 결과를 반환하는 함수
 	int		i;
 	char	*result;
 

@@ -15,20 +15,20 @@
 static void	ft_strcpy(char *result, char *src);
 
 char	*ft_strdup(char *src)
-{
+{ //문자열을 새로 할당하고 복사하는 함수
 	int		l;
 	char	*result;
 
 	l = ft_strlen(src);
-	result = (char *) malloc (l + 1);
+	result = (char *) malloc (l + 1); //문자열의 길이 + 1만큼 메모리 할당
 	if (result == 0)
 		return (0);
-	ft_strcpy(result, src);
+	ft_strcpy(result, src); //문자열을 복사
 	return (result);
 }
 
 static void	ft_strcpy(char *result, char *src)
-{
+{ //문자열을 복사하는 함수
 	int	i;
 
 	i = 0;

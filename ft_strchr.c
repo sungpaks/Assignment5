@@ -25,3 +25,4 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (0);
 }
+//문자열 s에서 문자 c가 처음으로 나타나는 위치를 반환하는 함수

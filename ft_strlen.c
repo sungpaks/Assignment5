@@ -13,7 +13,7 @@
 #include "libft.h"
 
 size_t	ft_strlen(const char *str)
-{
+{ //문자열의 길이를 반환하는 함수
 	size_t	result;
 
 	result = 0;

@@ -13,7 +13,7 @@
 #include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
-{
+{ //문자열의 각 문자에 대해 함수 f를 적용하는 함수
 	int	i;
 
 	i = 0;

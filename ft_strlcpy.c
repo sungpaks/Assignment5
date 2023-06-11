@@ -13,15 +13,15 @@
 #include "libft.h"
 
 size_t	ft_strlcpy(char *dest, char *src, size_t size)
-{
+{ //src를 dest에 복사하는 함수 : size만큼
 	size_t	i;
 	int		l;
 
 	l = ft_strlen(src);
 	i = 0;
-	if (!size)
+	if (!size) //size가 0인 경우, src의 길이를 반환
 		return (l);
-	while (src[i] && i < size - 1)
+	while (src[i] && i < size - 1) //src의 문자열을 dest에 복사
 	{
 		dest[i] = src[i];
 		i++;
