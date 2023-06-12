@@ -13,7 +13,7 @@
 #include "libft.h"
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
-{
+{//연결리스트의 맨 앞에 노드를 추가하는 함수
 	new->next = *lst;
 	*lst = new;
 }

@@ -13,7 +13,7 @@
 #include "libft.h"
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
-{
+{//연결리스트의 모든 노드에 함수를 적용하는 함수
 	while (lst)
 	{
 		f(lst->content);

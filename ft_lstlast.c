@@ -13,10 +13,10 @@
 #include "libft.h"
 
 t_list	*ft_lstlast(t_list *lst)
-{
-	if (!lst)
+{//연결리스트의 맨 뒤 노드를 반환하는 함수
+	if (!lst)//연결리스트가 비어있을 경우 NULL 반환
 		return (0);
-	while (lst->next)
+	while (lst->next) //연결리스트의 맨 뒤로 이동 후 반환
 		lst = lst->next;
 	return (lst);
 }

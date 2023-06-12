@@ -13,7 +13,7 @@
 #include "libft.h"
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
-{
+{//연결리스트의 노드를 삭제하는 함수
 	del(lst->content);
 	free(lst);
 }

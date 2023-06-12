@@ -13,16 +13,16 @@
 #include "libft.h"
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
-{
+{//연결리스트의 맨 뒤에 노드를 추가하는 함수
 	t_list	*current;
 
-	if (!*lst)
+	if (!*lst) //연결리스트가 비어있을 경우
 	{
 		*lst = new;
 		return ;
 	}
-	current = *lst;
-	while (current->next)
+	current = *lst; 
+	while (current->next) //연결리스트의 맨 뒤로 이동
 		current = current->next;
-	current->next = new;
+	current->next = new; //맨 뒤에 노드를 추가
 }
