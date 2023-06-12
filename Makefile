@@ -13,6 +13,7 @@ CFLAG = -Wall -Wextra -Werror
 all : $(NAME)
 
 $(NAME) : $(OBJS)
+	$(MAKE) $(OBJS) -j
 	ar rc $@ $^
 
 %.o : %.c
