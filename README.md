@@ -3,7 +3,7 @@
 ## :card_index_dividers: **libft.h is...**
 표준 C 라이브러리를 재작성하고 몇 가지 유용한 기능을 더한 라이브러리로, linux환경에서 호환됩니다.
 libft.h에서 제공하는 함수들의 prototype은 다음과 같습니다 :
-`
+```
 int		  ft_atoi(const char *str); //문자열을 정수로 변환
 void	  ft_bzero(void *s, size_t n); //n바이트를 0으로 채움
 void	  *ft_calloc(size_t count, size_t size); //공간을 할당하고 초기화
@@ -53,7 +53,7 @@ void	  ft_lstdelone(t_list *lst, void (*del)(void *)); //연결리스트에서 �
 void	  ft_lstclear(t_list **lst, void (*del)(void *)); //연결리스트의 노드 모두 삭제
 void	  ft_lstiter(t_list *lst, void (*f)(void *)); //연결리스트의 각 노드에 함수 적용
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *)); //연결리스트의 각 노드에 함수를 적용한 결과 반환
-`
+```
 
 ## :hammer_and_wrench: **how to build?** 
 ##### *starting in fundamental directory (includes Makefile, libft.h, src files(.c))*
