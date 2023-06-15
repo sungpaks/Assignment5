@@ -67,25 +67,22 @@ libft 라이브러리를 사용하기 위해선 다음과 같이 빌드과정을
 $ cd Assignment5 </br></br>
 $ make  </br>
 $ make all </br>
-이 두 명령어는 모든 src파일(.c) 파일들을 같은 이름의 object파일(.o)로 컴파일하고, libft.a 파일을 현재 디렉토리에 생성합니다. </br>
+*이 두 명령어는 라이브러리가 참조하는 모든 src파일(.c) 파일들을 같은 이름의 object파일(.o)로 컴파일하고, libft.a 파일을 현재 디렉토리에 생성합니다.* </br>
+</br> *이외의 make 명령어들 :* </br>
 $ make re </br>
-이 명령어는 컴파일&빌드 과정을 다시 진행합니다. </br>
+*이 명령어는 컴파일&빌드 과정을 다시 진행합니다.* </br>
 $ make clean </br>
-이 명령어는 object파일들을 모두 지웁니다. </br>
+*이 명령어는 object파일들을 모두 지웁니다.* </br>
 $ make fclean </br>
-이 명령어는 object파일들을 모두 지우며, 또한 libft.a파일을 지웁니다. </br>
+*이 명령어는 object파일들을 모두 지우며, 또한 libft.a파일을 지웁니다.* </br>
 
 
 ## :link: **how to include, compile, and link with libft.a?**
 #### starting at the directory "Assignment5"
 
-##### *first, include header in your source file (source_file.c)*
-```
-#include "libft.h"
-```
+##### *first, include header in your source file (assum that the file name is --> source_file.c)*
+> #include "libft.h"
+
 ##### *if you'd complete the code, compile using this commend :*
-```
-gcc source_file.c -I. -L. -lft
-//or, 
-cc source_file.c -I. -L. -lft
-```
+
+> gcc source_file.c -I. -L. -lft
